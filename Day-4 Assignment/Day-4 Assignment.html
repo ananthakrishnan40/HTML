@@ -5,50 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body style = 'display : flex ; flex-direction : column;justify-content : center;align-items:center ; background-color : gray'>
-    <div style="display : flex ; flex-direction : column;justify-content : center;align-items:center ;background-color:white; width :40%;border-radius:10px">
-    <h1 style="text-align:center;">
-        Registration form
-    </h1>
+<body style="display:flex ; align-items:center;flex-direction:column">
+    <style>
+        .center{
+            width : 50%;
+            background-color : rgb(137, 133, 133);
+            display:flex ;
+            flex-direction: column;
+            align-items: center;
 
-    <form  style = 'padding: 20px 10px 0px 10px ; display: flex ; gap: 10px; flex-direction : column ; width:50% ;background-color :white' action="/submit.html" >
-        <label style = 'padding: 20px 10px 0px 10px'for="username"> Enter username </label>
-        <input  type="text" id = 'username' value="username">
+        }
+    </style>
+    <div class="center">
+    <form action="">
+        <h1>Registration form</h1>
+        <label for="name">
+            Name :
+            <input type="text" id="name" placeholder="Enter Name" required>
+        </label>
         <br>
-        <label style = 'padding: 20px 10px 10px 10px' for="email">Enter Email id</label>
-        <input type="email" id = 'email' value="Email">
+        <label for="email">
+            Email :
+            <input type="email" id="email" placeholder="Enter Email" required>
+        </label>
         <br>
-        <label style = 'padding: 20px 10px 0px 10px' for="phonenumber">Enter phonenumber</label>
-        <input type="number" id = 'phonenumber'>
+        <label for="password">
+            Password:
+            <input type="password" id="password" placeholder="Enter password" required>
+        </label>
         <br>
-        <div style="display:flex ;">
-        <label style= 'padding: 20px 10px 0px 10px' for="address">Enter address</label>
-        <br>
-            <textarea id="address" rows="10" cols="50"></textarea>
-        </div>
-        <br>
-        <br>
-        <div></div>
-        <h4 id = gender>Gender</h4>
-            <label for ='gender'>
-                <input type="radio" name = 'gender' value="male">
-                Male
+        <label for="gender">
+            Gender :
+            <label for="Male">
+                male
+                <input type="radio" name="gender" value="mail" id="male" required>
             </label>
-            <label for = "gender">
-                <input type="radio" name="gender" value="femail">
+            <label for="female">
                 Female
+                <input type="radio" name="gender" value="female" id="female">
             </label>
-        
-        <label for = 'education'>Education
-            <select id="education">
-                <option value="UG">UG</option>
-                <option value="PG">PG</option>
+        </label>
+        <br>
+        <label for="hobbies">
+            Hobbies :
+            <select name="hobbies" id="hobbies" multiple required>
+                <option value="Cricket">Cricket</option>
+                <option value="football">Football</option>
+                <option value="chess">Chess</option>
+                <option value="Traveling">Traveling</option>
+                <option value="Coding">Coding</option>
+                <option value="Dancing">Dancing</option>
+                <option value="singing">Singing</option>
+                <option value="Martialarts">Martial-arts</option>
             </select>
         </label>
-
+        <br>
+        <label for="age">
+            Age :
+            <input type="number" min="18" max="70" placeholder="Enter age" required>
+        </label>
+        <br>
+        <input type="submit" placeholder="Submit" align="center">
     </form>
-
     </div>
-    
+
 </body>
 </html>
