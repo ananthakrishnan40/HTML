@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style = 'display : flex ; flex-direction : column;justify-content : center;align-items:center ; background-color : gray'>
+    <div style="display : flex ; flex-direction : column;justify-content : center;align-items:center ;background-color:white; width :40%;border-radius:10px">
+    <h1 style="text-align:center;">
+        Registration form
+    </h1>
+
+    <form  style = 'padding: 20px 10px 0px 10px ; display: flex ; gap: 10px; flex-direction : column ; width:50% ;background-color :white' action="/submit.html" >
+        <label style = 'padding: 20px 10px 0px 10px'for="username"> Enter username </label>
+        <input  type="text" id = 'username' value="username">
+        <br>
+        <label style = 'padding: 20px 10px 10px 10px' for="email">Enter Email id</label>
+        <input type="email" id = 'email' value="Email">
+        <br>
+        <label style = 'padding: 20px 10px 0px 10px' for="phonenumber">Enter phonenumber</label>
+        <input type="number" id = 'phonenumber'>
+        <br>
+        <div style="display:flex ;">
+        <label style= 'padding: 20px 10px 0px 10px' for="address">Enter address</label>
+        <br>
+            <textarea id="address" rows="10" cols="50"></textarea>
+        </div>
+        <br>
+        <br>
+        <div></div>
+        <h4 id = gender>Gender</h4>
+            <label for ='gender'>
+                <input type="radio" name = 'gender' value="male">
+                Male
+            </label>
+            <label for = "gender">
+                <input type="radio" name="gender" value="femail">
+                Female
+            </label>
+        
+        <label for = 'education'>Education
+            <select id="education">
+                <option value="UG">UG</option>
+                <option value="PG">PG</option>
+            </select>
+        </label>
+
+    </form>
+
+    </div>
+    
+</body>
+</html>
