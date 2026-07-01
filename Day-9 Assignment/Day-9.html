@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #task1 span{
+            display : inline;
+        }
+        #task2{
+            display : flex;
+        }
+        .div1{
+            background-color: red;
+            padding : 20px;
+            margin : 10px;
+        }
+        
+        .div2{
+            background-color: blue;
+            padding : 23px;
+            margin : 11px;
+        }
+        
+        .div3{
+            background-color: aquamarine;
+            padding : 2px;
+            margin : 1px;
+        }
+        
+        .div4{
+            background-color: tomato;
+            padding : 20px;
+            margin : 10px;
+        }
+        
+        .div5{
+            background-color: brown;
+            padding : 33px;
+            margin : 7px;
+        }
+        #task3{
+            box-sizing: border-box;
+            background-color: lightgray;
+            margin : 20px;
+        }
+        
+        
+        .cardtask3{
+            width : 180px;
+            background-color: lightcyan;
+            height : 200px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: red;
+            margin-top : 20px; 
+            vertical-align: top;
+            display : inline-block;
+        }
+        #task4 li{
+            display : inline;
+            margin : 10px;
+        }
+        #task4 ul{
+            position: absolute;
+            
+
+        }
+        #task4 {
+            background-color: blue;
+            height : 50px;
+            box-sizing : border-box;
+            vertical-align: bottom;  
+            position: relative;
+        
+        }
+        #task4 a{
+            background-color: lightgray;
+            
+        }
+        #task4 a:hover{
+            background-color:red;
+            padding : 20px;
+        }
+        #task4:hover{
+            background-color: lightgray;
+        }
+
+        #task5{
+            position: relative;
+        }
+        .left{
+            position: absolute;
+            left:800px;
+        }
+        .down{
+            position:absolute;
+            top: 400px;
+        }
+        .box{
+            width : 200px;
+            height : 300px;
+            background-color: lightgray;
+            border: 2px solid black;
+            display : inline-block;
+        }
+        #task6{
+            margin-top : 700px;
+        }
+        .big{
+            position : relative;
+            height: 700px;
+            width : 700px;
+            border: 3px solid violet;
+        }
+        .small{
+            position : absolute;
+            height: 200px;
+            width : 200px;
+            border : 2px solid red;
+            top:0;
+            right:0;
+            background-color: lightgray;
+
+        }
+        #task7 header{
+            background-color: blue;
+            height : 50px;
+            box-sizing : border-box;
+            vertical-align: bottom;  
+            position: sticky;
+            top:25px;
+            
+        }
+        #task7 li{
+            display : inline;
+            margin :10px;
+        }
+        #task7 ul{
+            background-color: lightgray;
+            position: absolute;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- task 1 -->
+    <div id="task1"> 
+        <span>span 1</span>
+        <span>span 2</span>
+        <span>span 3</span>
+        <span>span 4</span> 
+        <span>span 5</span>
+    </div>
+
+
+
+    <!-- task 2 -->
+    <div id="task2">
+        <div class="div1">
+            <h1>Div 1</h1>
+        </div>
+        <div class="div2">
+            <h1>div 2</h1> 
+        </div>
+        <div class="div3">
+            <h1>div 3</h1>
+        </div>
+        <div class="div4">
+            <h1>div 4</h1>
+        </div>
+        <div class="div5">
+            <h1>div 5</h1>
+        </div>
+    </div>
+
+
+    <!-- task 3 -->
+    <div id="task3">
+
+      <section class="cardtask3">
+        <h2>Product Name</h2>
+        <h3>Laptop</h3>
+      </section>
+
+      <section class="cardtask3">
+        <h2>price</h2>
+        <h3>50000</h3>
+      </section>
+
+      <section class="cardtask3">
+        <input type="button" placeholder="BUY" value="buy">
+      </section>
+
+    </div>
+
+
+    <!-- task 4 -->
+    <div id="task4">
+        <header>
+            <ul>
+                <li>
+                    <a href="home">HOME</a>
+                </li>
+                <li>
+                    <a href='about'>About</a>
+                </li>
+                <li>
+                    <a href="'services">Services</a>
+                </li>
+                <li>
+                    <a href="gallery">Gallery</a>
+                </li>
+                <li>
+                    <a href="Contact">Contact</a>
+                </li>
+            </ul>
+        </header>
+    </div>
+    
+    <div id="task5">
+        <section class="box">
+            <h1>box 1</h1>
+        </section>
+
+        <section class="box down">
+            <h1>box 2</h1>
+        </section>
+
+        <section class="box left">
+            <h1>box 3</h1>
+        </section>
+    </div>
+    <div id="task6">
+        <div class="big">
+            <div class="small">
+
+            </div>
+        </div>
+    </div>
+    <div id="task7">
+        <header>
+            <ul>
+                <li>
+                    <a href="home">HOME</a>
+                </li>
+                <li>
+                    <a href='about'>About</a>
+                </li>
+                <li>
+                    <a href="'services">Services</a>
+                </li>
+                <li>
+                    <a href="gallery">Gallery</a>
+                </li>
+                <li>
+                    <a href="Contact">Contact</a>
+                </li>
+            </ul>
+
+        </header>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti neque, quam distinctio asperiores eius possimus autem eos repellat saepe facere, tenetur accusantium? Debitis vel saepe eligendi numquam quas distinctio dolor. Dolore eligendi id blanditiis suscipit iure facilis eveniet, ex molestiae similique incidunt! Possimus a cupiditate veniam culpa rerum velit perspiciatis unde. Praesentium, rem laboriosam reprehenderit ipsam fuga minus asperiores architecto veniam dolore libero voluptatem quisquam velit est eos id obcaecati tenetur, ex esse. Fugit quae hic minus nemo est? Nam adipisci quas deleniti facilis iure ea laboriosam reprehenderit repellendus eveniet, culpa rem quae eum quo explicabo id ducimus perferendis ipsum voluptate unde cumque atque, delectus nisi. Expedita consectetur explicabo ullam, mollitia iure ad voluptate dolor nisi quos magnam eum quae quaerat deserunt debitis. Incidunt aliquam qui facere alias dicta debitis ipsum necessitatibus, voluptate fuga quisquam expedita culpa corrupti exercitationem voluptatum soluta quidem tempora consectetur aliquid, repudiandae dolores eveniet iure sed. Quisquam nemo consectetur laudantium architecto saepe nesciunt dolores delectus enim accusamus, non quos id reiciendis repellendus maxime deleniti tempora ipsa, earum distinctio suscipit a tenetur? Perferendis officia rerum debitis. Quod, fugiat soluta! Alias aliquid deserunt, ab ipsam atque quam quaerat, adipisci modi inventore dolores eveniet nesciunt fuga aspernatur perferendis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti neque, quam distinctio asperiores eius possimus autem eos repellat saepe facere, tenetur accusantium? Debitis vel saepe eligendi numquam quas distinctio dolor. Dolore eligendi id blanditiis suscipit iure facilis eveniet, ex molestiae similique incidunt! Possimus a cupiditate veniam culpa rerum velit perspiciatis unde. Praesentium, rem laboriosam reprehenderit ipsam fuga minus asperiores architecto veniam dolore libero voluptatem quisquam velit est eos id obcaecati tenetur, ex esse. Fugit quae hic minus nemo est? Nam adipisci quas deleniti facilis iure ea laboriosam reprehenderit repellendus eveniet, culpa rem quae eum quo explicabo id ducimus perferendis ipsum voluptate unde cumque atque, delectus nisi. Expedita consectetur explicabo ullam, mollitia iure ad voluptate dolor nisi quos magnam eum quae quaerat deserunt debitis. Incidunt aliquam qui facere alias dicta debitis ipsum necessitatibus, voluptate fuga quisquam expedita culpa corrupti exercitationem voluptatum soluta quidem tempora consectetur aliquid, repudiandae dolores eveniet iure sed. Quisquam nemo consectetur laudantium architecto saepe nesciunt dolores delectus enim accusamus, non quos id reiciendis repellendus maxime deleniti tempora ipsa, earum distinctio suscipit a tenetur? Perferendis officia rerum debitis. Quod, fugiat soluta! Alias aliquid deserunt, ab ipsam atque quam quaerat, adipisci modi inventore dolores eveniet nesciunt fuga aspernatur perferendis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti neque, quam distinctio asperiores eius possimus autem eos repellat saepe facere, tenetur accusantium? Debitis vel saepe eligendi numquam quas distinctio dolor. Dolore eligendi id blanditiis suscipit iure facilis eveniet, ex molestiae similique incidunt! Possimus a cupiditate veniam culpa rerum velit perspiciatis unde. Praesentium, rem laboriosam reprehenderit ipsam fuga minus asperiores architecto veniam dolore libero voluptatem quisquam velit est eos id obcaecati tenetur, ex esse. Fugit quae hic minus nemo est? Nam adipisci quas deleniti facilis iure ea laboriosam reprehenderit repellendus eveniet, culpa rem quae eum quo explicabo id ducimus perferendis ipsum voluptate unde cumque atque, delectus nisi. Expedita consectetur explicabo ullam, mollitia iure ad voluptate dolor nisi quos magnam eum quae quaerat deserunt debitis. Incidunt aliquam qui facere alias dicta debitis ipsum necessitatibus, voluptate fuga quisquam expedita culpa corrupti exercitationem voluptatum soluta quidem tempora consectetur aliquid, repudiandae dolores eveniet iure sed. Quisquam nemo consectetur laudantium architecto saepe nesciunt dolores delectus enim accusamus, non quos id reiciendis repellendus maxime deleniti tempora ipsa, earum distinctio suscipit a tenetur? Perferendis officia rerum debitis. Quod, fugiat soluta! Alias aliquid deserunt, ab ipsam atque quam quaerat, adipisci modi inventore dolores eveniet nesciunt fuga aspernatur perferendis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti neque, quam distinctio asperiores eius possimus autem eos repellat saepe facere, tenetur accusantium? Debitis vel saepe eligendi numquam quas distinctio dolor. Dolore eligendi id blanditiis suscipit iure facilis eveniet, ex molestiae similique incidunt! Possimus a cupiditate veniam culpa rerum velit perspiciatis unde. Praesentium, rem laboriosam reprehenderit ipsam fuga minus asperiores architecto veniam dolore libero voluptatem quisquam velit est eos id obcaecati tenetur, ex esse. Fugit quae hic minus nemo est? Nam adipisci quas deleniti facilis iure ea laboriosam reprehenderit repellendus eveniet, culpa rem quae eum quo explicabo id ducimus perferendis ipsum voluptate unde cumque atque, delectus nisi. Expedita consectetur explicabo ullam, mollitia iure ad voluptate dolor nisi quos magnam eum quae quaerat deserunt debitis. Incidunt aliquam qui facere alias dicta debitis ipsum necessitatibus, voluptate fuga quisquam expedita culpa corrupti exercitationem voluptatum soluta quidem tempora consectetur aliquid, repudiandae dolores eveniet iure sed. Quisquam nemo consectetur laudantium architecto saepe nesciunt dolores delectus enim accusamus, non quos id reiciendis repellendus maxime deleniti tempora ipsa, earum distinctio suscipit a tenetur? Perferendis officia rerum debitis. Quod, fugiat soluta! Alias aliquid deserunt, ab ipsam atque quam quaerat, adipisci modi inventore dolores eveniet nesciunt fuga aspernatur perferendis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti neque, quam distinctio asperiores eius possimus autem eos repellat saepe facere, tenetur accusantium? Debitis vel saepe eligendi numquam quas distinctio dolor. Dolore eligendi id blanditiis suscipit iure facilis eveniet, ex molestiae similique incidunt! Possimus a cupiditate veniam culpa rerum velit perspiciatis unde. Praesentium, rem laboriosam reprehenderit ipsam fuga minus asperiores architecto veniam dolore libero voluptatem quisquam velit est eos id obcaecati tenetur, ex esse. Fugit quae hic minus nemo est? Nam adipisci quas deleniti facilis iure ea laboriosam reprehenderit repellendus eveniet, culpa rem quae eum quo explicabo id ducimus perferendis ipsum voluptate unde cumque atque, delectus nisi. Expedita consectetur explicabo ullam, mollitia iure ad voluptate dolor nisi quos magnam eum quae quaerat deserunt debitis. Incidunt aliquam qui facere alias dicta debitis ipsum necessitatibus, voluptate fuga quisquam expedita culpa corrupti exercitationem voluptatum soluta quidem tempora consectetur aliquid, repudiandae dolores eveniet iure sed. Quisquam nemo consectetur laudantium architecto saepe nesciunt dolores delectus enim accusamus, non quos id reiciendis repellendus maxime deleniti tempora ipsa, earum distinctio suscipit a tenetur? Perferendis officia rerum debitis. Quod, fugiat soluta! Alias aliquid deserunt, ab ipsam atque quam quaerat, adipisci modi inventore dolores eveniet nesciunt fuga aspernatur perferendis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti neque, quam distinctio asperiores eius possimus autem eos repellat saepe facere, tenetur accusantium? Debitis vel saepe eligendi numquam quas distinctio dolor. Dolore eligendi id blanditiis suscipit iure facilis eveniet, ex molestiae similique incidunt! Possimus a cupiditate veniam culpa rerum velit perspiciatis unde. Praesentium, rem laboriosam reprehenderit ipsam fuga minus asperiores architecto veniam dolore libero voluptatem quisquam velit est eos id obcaecati tenetur, ex esse. Fugit quae hic minus nemo est? Nam adipisci quas deleniti facilis iure ea laboriosam reprehenderit repellendus eveniet, culpa rem quae eum quo explicabo id ducimus perferendis ipsum voluptate unde cumque atque, delectus nisi. Expedita consectetur explicabo ullam, mollitia iure ad voluptate dolor nisi quos magnam eum quae quaerat deserunt debitis. Incidunt aliquam qui facere alias dicta debitis ipsum necessitatibus, voluptate fuga quisquam expedita culpa corrupti exercitationem voluptatum soluta quidem tempora consectetur aliquid, repudiandae dolores eveniet iure sed. Quisquam nemo consectetur laudantium architecto saepe nesciunt dolores delectus enim accusamus, non quos id reiciendis repellendus maxime deleniti tempora ipsa, earum distinctio suscipit a tenetur? Perferendis officia rerum debitis. Quod, fugiat soluta! Alias aliquid deserunt, ab ipsam atque quam quaerat, adipisci modi inventore dolores eveniet nesciunt fuga aspernatur perferendis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti neque, quam distinctio asperiores eius possimus autem eos repellat saepe facere, tenetur accusantium? Debitis vel saepe eligendi numquam quas distinctio dolor. Dolore eligendi id blanditiis suscipit iure facilis eveniet, ex molestiae similique incidunt! Possimus a cupiditate veniam culpa rerum velit perspiciatis unde. Praesentium, rem laboriosam reprehenderit ipsam fuga minus asperiores architecto veniam dolore libero voluptatem quisquam velit est eos id obcaecati tenetur, ex esse. Fugit quae hic minus nemo est? Nam adipisci quas deleniti facilis iure ea laboriosam reprehenderit repellendus eveniet, culpa rem quae eum quo explicabo id ducimus perferendis ipsum voluptate unde cumque atque, delectus nisi. Expedita consectetur explicabo ullam, mollitia iure ad voluptate dolor nisi quos magnam eum quae quaerat deserunt debitis. Incidunt aliquam qui facere alias dicta debitis ipsum necessitatibus, voluptate fuga quisquam expedita culpa corrupti exercitationem voluptatum soluta quidem tempora consectetur aliquid, repudiandae dolores eveniet iure sed. Quisquam nemo consectetur laudantium architecto saepe nesciunt dolores delectus enim accusamus, non quos id reiciendis repellendus maxime deleniti tempora ipsa, earum distinctio suscipit a tenetur? Perferendis officia rerum debitis. Quod, fugiat soluta! Alias aliquid deserunt, ab ipsam atque quam quaerat, adipisci modi inventore dolores eveniet nesciunt fuga aspernatur perferendis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti neque, quam distinctio asperiores eius possimus autem eos repellat saepe facere, tenetur accusantium? Debitis vel saepe eligendi numquam quas distinctio dolor. Dolore eligendi id blanditiis suscipit iure facilis eveniet, ex molestiae similique incidunt! Possimus a cupiditate veniam culpa rerum velit perspiciatis unde. Praesentium, rem laboriosam reprehenderit ipsam fuga minus asperiores architecto veniam dolore libero voluptatem quisquam velit est eos id obcaecati tenetur, ex esse. Fugit quae hic minus nemo est? Nam adipisci quas deleniti facilis iure ea laboriosam reprehenderit repellendus eveniet, culpa rem quae eum quo explicabo id ducimus perferendis ipsum voluptate unde cumque atque, delectus nisi. Expedita consectetur explicabo ullam, mollitia iure ad voluptate dolor nisi quos magnam eum quae quaerat deserunt debitis. Incidunt aliquam qui facere alias dicta debitis ipsum necessitatibus, voluptate fuga quisquam expedita culpa corrupti exercitationem voluptatum soluta quidem tempora consectetur aliquid, repudiandae dolores eveniet iure sed. Quisquam nemo consectetur laudantium architecto saepe nesciunt dolores delectus enim accusamus, non quos id reiciendis repellendus maxime deleniti tempora ipsa, earum distinctio suscipit a tenetur? Perferendis officia rerum debitis. Quod, fugiat soluta! Alias aliquid deserunt, ab ipsam atque quam quaerat, adipisci modi inventore dolores eveniet nesciunt fuga aspernatur perferendis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti neque, quam distinctio asperiores eius possimus autem eos repellat saepe facere, tenetur accusantium? Debitis vel saepe eligendi numquam quas distinctio dolor. Dolore eligendi id blanditiis suscipit iure facilis eveniet, ex molestiae similique incidunt! Possimus a cupiditate veniam culpa rerum velit perspiciatis unde. Praesentium, rem laboriosam reprehenderit ipsam fuga minus asperiores architecto veniam dolore libero voluptatem quisquam velit est eos id obcaecati tenetur, ex esse. Fugit quae hic minus nemo est? Nam adipisci quas deleniti facilis iure ea laboriosam reprehenderit repellendus eveniet, culpa rem quae eum quo explicabo id ducimus perferendis ipsum voluptate unde cumque atque, delectus nisi. Expedita consectetur explicabo ullam, mollitia iure ad voluptate dolor nisi quos magnam eum quae quaerat deserunt debitis. Incidunt aliquam qui facere alias dicta debitis ipsum necessitatibus, voluptate fuga quisquam expedita culpa corrupti exercitationem voluptatum soluta quidem tempora consectetur aliquid, repudiandae dolores eveniet iure sed. Quisquam nemo consectetur laudantium architecto saepe nesciunt dolores delectus enim accusamus, non quos id reiciendis repellendus maxime deleniti tempora ipsa, earum distinctio suscipit a tenetur? Perferendis officia rerum debitis. Quod, fugiat soluta! Alias aliquid deserunt, ab ipsam atque quam quaerat, adipisci modi inventore dolores eveniet nesciunt fuga aspernatur perferendis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti neque, quam distinctio asperiores eius possimus autem eos repellat saepe facere, tenetur accusantium? Debitis vel saepe eligendi numquam quas distinctio dolor. Dolore eligendi id blanditiis suscipit iure facilis eveniet, ex molestiae similique incidunt! Possimus a cupiditate veniam culpa rerum velit perspiciatis unde. Praesentium, rem laboriosam reprehenderit ipsam fuga minus asperiores architecto veniam dolore libero voluptatem quisquam velit est eos id obcaecati tenetur, ex esse. Fugit quae hic minus nemo est? Nam adipisci quas deleniti facilis iure ea laboriosam reprehenderit repellendus eveniet, culpa rem quae eum quo explicabo id ducimus perferendis ipsum voluptate unde cumque atque, delectus nisi. Expedita consectetur explicabo ullam, mollitia iure ad voluptate dolor nisi quos magnam eum quae quaerat deserunt debitis. Incidunt aliquam qui facere alias dicta debitis ipsum necessitatibus, voluptate fuga quisquam expedita culpa corrupti exercitationem voluptatum soluta quidem tempora consectetur aliquid, repudiandae dolores eveniet iure sed. Quisquam nemo consectetur laudantium architecto saepe nesciunt dolores delectus enim accusamus, non quos id reiciendis repellendus maxime deleniti tempora ipsa, earum distinctio suscipit a tenetur? Perferendis officia rerum debitis. Quod, fugiat soluta! Alias aliquid deserunt, ab ipsam atque quam quaerat, adipisci modi inventore dolores eveniet nesciunt fuga aspernatur perferendis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti neque, quam distinctio asperiores eius possimus autem eos repellat saepe facere, tenetur accusantium? Debitis vel saepe eligendi numquam quas distinctio dolor. Dolore eligendi id blanditiis suscipit iure facilis eveniet, ex molestiae similique incidunt! Possimus a cupiditate veniam culpa rerum velit perspiciatis unde. Praesentium, rem laboriosam reprehenderit ipsam fuga minus asperiores architecto veniam dolore libero voluptatem quisquam velit est eos id obcaecati tenetur, ex esse. Fugit quae hic minus nemo est? Nam adipisci quas deleniti facilis iure ea laboriosam reprehenderit repellendus eveniet, culpa rem quae eum quo explicabo id ducimus perferendis ipsum voluptate unde cumque atque, delectus nisi. Expedita consectetur explicabo ullam, mollitia iure ad voluptate dolor nisi quos magnam eum quae quaerat deserunt debitis. Incidunt aliquam qui facere alias dicta debitis ipsum necessitatibus, voluptate fuga quisquam expedita culpa corrupti exercitationem voluptatum soluta quidem tempora consectetur aliquid, repudiandae dolores eveniet iure sed. Quisquam nemo consectetur laudantium architecto saepe nesciunt dolores delectus enim accusamus, non quos id reiciendis repellendus maxime deleniti tempora ipsa, earum distinctio suscipit a tenetur? Perferendis officia rerum debitis. Quod, fugiat soluta! Alias aliquid deserunt, ab ipsam atque quam quaerat, adipisci modi inventore dolores eveniet nesciunt fuga aspernatur perferendis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti neque, quam distinctio asperiores eius possimus autem eos repellat saepe facere, tenetur accusantium? Debitis vel saepe eligendi numquam quas distinctio dolor. Dolore eligendi id blanditiis suscipit iure facilis eveniet, ex molestiae similique incidunt! Possimus a cupiditate veniam culpa rerum velit perspiciatis unde. Praesentium, rem laboriosam reprehenderit ipsam fuga minus asperiores architecto veniam dolore libero voluptatem quisquam velit est eos id obcaecati tenetur, ex esse. Fugit quae hic minus nemo est? Nam adipisci quas deleniti facilis iure ea laboriosam reprehenderit repellendus eveniet, culpa rem quae eum quo explicabo id ducimus perferendis ipsum voluptate unde cumque atque, delectus nisi. Expedita consectetur explicabo ullam, mollitia iure ad voluptate dolor nisi quos magnam eum quae quaerat deserunt debitis. Incidunt aliquam qui facere alias dicta debitis ipsum necessitatibus, voluptate fuga quisquam expedita culpa corrupti exercitationem voluptatum soluta quidem tempora consectetur aliquid, repudiandae dolores eveniet iure sed. Quisquam nemo consectetur laudantium architecto saepe nesciunt dolores delectus enim accusamus, non quos id reiciendis repellendus maxime deleniti tempora ipsa, earum distinctio suscipit a tenetur? Perferendis officia rerum debitis. Quod, fugiat soluta! Alias aliquid deserunt, ab ipsam atque quam quaerat, adipisci modi inventore dolores eveniet nesciunt fuga aspernatur perferendis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti neque, quam distinctio asperiores eius possimus autem eos repellat saepe facere, tenetur accusantium? Debitis vel saepe eligendi numquam quas distinctio dolor. Dolore eligendi id blanditiis suscipit iure facilis eveniet, ex molestiae similique incidunt! Possimus a cupiditate veniam culpa rerum velit perspiciatis unde. Praesentium, rem laboriosam reprehenderit ipsam fuga minus asperiores architecto veniam dolore libero voluptatem quisquam velit est eos id obcaecati tenetur, ex esse. Fugit quae hic minus nemo est? Nam adipisci quas deleniti facilis iure ea laboriosam reprehenderit repellendus eveniet, culpa rem quae eum quo explicabo id ducimus perferendis ipsum voluptate unde cumque atque, delectus nisi. Expedita consectetur explicabo ullam, mollitia iure ad voluptate dolor nisi quos magnam eum quae quaerat deserunt debitis. Incidunt aliquam qui facere alias dicta debitis ipsum necessitatibus, voluptate fuga quisquam expedita culpa corrupti exercitationem voluptatum soluta quidem tempora consectetur aliquid, repudiandae dolores eveniet iure sed. Quisquam nemo consectetur laudantium architecto saepe nesciunt dolores delectus enim accusamus, non quos id reiciendis repellendus maxime deleniti tempora ipsa, earum distinctio suscipit a tenetur? Perferendis officia rerum debitis. Quod, fugiat soluta! Alias aliquid deserunt, ab ipsam atque quam quaerat, adipisci modi inventore dolores eveniet nesciunt fuga aspernatur perferendis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti neque, quam distinctio asperiores eius possimus autem eos repellat saepe facere, tenetur accusantium? Debitis vel saepe eligendi numquam quas distinctio dolor. Dolore eligendi id blanditiis suscipit iure facilis eveniet, ex molestiae similique incidunt! Possimus a cupiditate veniam culpa rerum velit perspiciatis unde. Praesentium, rem laboriosam reprehenderit ipsam fuga minus asperiores architecto veniam dolore libero voluptatem quisquam velit est eos id obcaecati tenetur, ex esse. Fugit quae hic minus nemo est? Nam adipisci quas deleniti facilis iure ea laboriosam reprehenderit repellendus eveniet, culpa rem quae eum quo explicabo id ducimus perferendis ipsum voluptate unde cumque atque, delectus nisi. Expedita consectetur explicabo ullam, mollitia iure ad voluptate dolor nisi quos magnam eum quae quaerat deserunt debitis. Incidunt aliquam qui facere alias dicta debitis ipsum necessitatibus, voluptate fuga quisquam expedita culpa corrupti exercitationem voluptatum soluta quidem tempora consectetur aliquid, repudiandae dolores eveniet iure sed. Quisquam nemo consectetur laudantium architecto saepe nesciunt dolores delectus enim accusamus, non quos id reiciendis repellendus maxime deleniti tempora ipsa, earum distinctio suscipit a tenetur? Perferendis officia rerum debitis. Quod, fugiat soluta! Alias aliquid deserunt, ab ipsam atque quam quaerat, adipisci modi inventore dolores eveniet nesciunt fuga aspernatur perferendis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti neque, quam distinctio asperiores eius possimus autem eos repellat saepe facere, tenetur accusantium? Debitis vel saepe eligendi numquam quas distinctio dolor. Dolore eligendi id blanditiis suscipit iure facilis eveniet, ex molestiae similique incidunt! Possimus a cupiditate veniam culpa rerum velit perspiciatis unde. Praesentium, rem laboriosam reprehenderit ipsam fuga minus asperiores architecto veniam dolore libero voluptatem quisquam velit est eos id obcaecati tenetur, ex esse. Fugit quae hic minus nemo est? Nam adipisci quas deleniti facilis iure ea laboriosam reprehenderit repellendus eveniet, culpa rem quae eum quo explicabo id ducimus perferendis ipsum voluptate unde cumque atque, delectus nisi. Expedita consectetur explicabo ullam, mollitia iure ad voluptate dolor nisi quos magnam eum quae quaerat deserunt debitis. Incidunt aliquam qui facere alias dicta debitis ipsum necessitatibus, voluptate fuga quisquam expedita culpa corrupti exercitationem voluptatum soluta quidem tempora consectetur aliquid, repudiandae dolores eveniet iure sed. Quisquam nemo consectetur laudantium architecto saepe nesciunt dolores delectus enim accusamus, non quos id reiciendis repellendus maxime deleniti tempora ipsa, earum distinctio suscipit a tenetur? Perferendis officia rerum debitis. Quod, fugiat soluta! Alias aliquid deserunt, ab ipsam atque quam quaerat, adipisci modi inventore dolores eveniet nesciunt fuga aspernatur perferendis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti neque, quam distinctio asperiores eius possimus autem eos repellat saepe facere, tenetur accusantium? Debitis vel saepe eligendi numquam quas distinctio dolor. Dolore eligendi id blanditiis suscipit iure facilis eveniet, ex molestiae similique incidunt! Possimus a cupiditate veniam culpa rerum velit perspiciatis unde. Praesentium, rem laboriosam reprehenderit ipsam fuga minus asperiores architecto veniam dolore libero voluptatem quisquam velit est eos id obcaecati tenetur, ex esse. Fugit quae hic minus nemo est? Nam adipisci quas deleniti facilis iure ea laboriosam reprehenderit repellendus eveniet, culpa rem quae eum quo explicabo id ducimus perferendis ipsum voluptate unde cumque atque, delectus nisi. Expedita consectetur explicabo ullam, mollitia iure ad voluptate dolor nisi quos magnam eum quae quaerat deserunt debitis. Incidunt aliquam qui facere alias dicta debitis ipsum necessitatibus, voluptate fuga quisquam expedita culpa corrupti exercitationem voluptatum soluta quidem tempora consectetur aliquid, repudiandae dolores eveniet iure sed. Quisquam nemo consectetur laudantium architecto saepe nesciunt dolores delectus enim accusamus, non quos id reiciendis repellendus maxime deleniti tempora ipsa, earum distinctio suscipit a tenetur? Perferendis officia rerum debitis. Quod, fugiat soluta! Alias aliquid deserunt, ab ipsam atque quam quaerat, adipisci modi inventore dolores eveniet nesciunt fuga aspernatur perferendis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti neque, quam distinctio asperiores eius possimus autem eos repellat saepe facere, tenetur accusantium? Debitis vel saepe eligendi numquam quas distinctio dolor. Dolore eligendi id blanditiis suscipit iure facilis eveniet, ex molestiae similique incidunt! Possimus a cupiditate veniam culpa rerum velit perspiciatis unde. Praesentium, rem laboriosam reprehenderit ipsam fuga minus asperiores architecto veniam dolore libero voluptatem quisquam velit est eos id obcaecati tenetur, ex esse. Fugit quae hic minus nemo est? Nam adipisci quas deleniti facilis iure ea laboriosam reprehenderit repellendus eveniet, culpa rem quae eum quo explicabo id ducimus perferendis ipsum voluptate unde cumque atque, delectus nisi. Expedita consectetur explicabo ullam, mollitia iure ad voluptate dolor nisi quos magnam eum quae quaerat deserunt debitis. Incidunt aliquam qui facere alias dicta debitis ipsum necessitatibus, voluptate fuga quisquam expedita culpa corrupti exercitationem voluptatum soluta quidem tempora consectetur aliquid, repudiandae dolores eveniet iure sed. Quisquam nemo consectetur laudantium architecto saepe nesciunt dolores delectus enim accusamus, non quos id reiciendis repellendus maxime deleniti tempora ipsa, earum distinctio suscipit a tenetur? Perferendis officia rerum debitis. Quod, fugiat soluta! Alias aliquid deserunt, ab ipsam atque quam quaerat, adipisci modi inventore dolores eveniet nesciunt fuga aspernatur perferendis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti neque, quam distinctio asperiores eius possimus autem eos repellat saepe facere, tenetur accusantium? Debitis vel saepe eligendi numquam quas distinctio dolor. Dolore eligendi id blanditiis suscipit iure facilis eveniet, ex molestiae similique incidunt! Possimus a cupiditate veniam culpa rerum velit perspiciatis unde. Praesentium, rem laboriosam reprehenderit ipsam fuga minus asperiores architecto veniam dolore libero voluptatem quisquam velit est eos id obcaecati tenetur, ex esse. Fugit quae hic minus nemo est? Nam adipisci quas deleniti facilis iure ea laboriosam reprehenderit repellendus eveniet, culpa rem quae eum quo explicabo id ducimus perferendis ipsum voluptate unde cumque atque, delectus nisi. Expedita consectetur explicabo ullam, mollitia iure ad voluptate dolor nisi quos magnam eum quae quaerat deserunt debitis. Incidunt aliquam qui facere alias dicta debitis ipsum necessitatibus, voluptate fuga quisquam expedita culpa corrupti exercitationem voluptatum soluta quidem tempora consectetur aliquid, repudiandae dolores eveniet iure sed. Quisquam nemo consectetur laudantium architecto saepe nesciunt dolores delectus enim accusamus, non quos id reiciendis repellendus maxime deleniti tempora ipsa, earum distinctio suscipit a tenetur? Perferendis officia rerum debitis. Quod, fugiat soluta! Alias aliquid deserunt, ab ipsam atque quam quaerat, adipisci modi inventore dolores eveniet nesciunt fuga aspernatur perferendis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti neque, quam distinctio asperiores eius possimus autem eos repellat saepe facere, tenetur accusantium? Debitis vel saepe eligendi numquam quas distinctio dolor. Dolore eligendi id blanditiis suscipit iure facilis eveniet, ex molestiae similique incidunt! Possimus a cupiditate veniam culpa rerum velit perspiciatis unde. Praesentium, rem laboriosam reprehenderit ipsam fuga minus asperiores architecto veniam dolore libero voluptatem quisquam velit est eos id obcaecati tenetur, ex esse. Fugit quae hic minus nemo est? Nam adipisci quas deleniti facilis iure ea laboriosam reprehenderit repellendus eveniet, culpa rem quae eum quo explicabo id ducimus perferendis ipsum voluptate unde cumque atque, delectus nisi. Expedita consectetur explicabo ullam, mollitia iure ad voluptate dolor nisi quos magnam eum quae quaerat deserunt debitis. Incidunt aliquam qui facere alias dicta debitis ipsum necessitatibus, voluptate fuga quisquam expedita culpa corrupti exercitationem voluptatum soluta quidem tempora consectetur aliquid, repudiandae dolores eveniet iure sed. Quisquam nemo consectetur laudantium architecto saepe nesciunt dolores delectus enim accusamus, non quos id reiciendis repellendus maxime deleniti tempora ipsa, earum distinctio suscipit a tenetur? Perferendis officia rerum debitis. Quod, fugiat soluta! Alias aliquid deserunt, ab ipsam atque quam quaerat, adipisci modi inventore dolores eveniet nesciunt fuga aspernatur perferendis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti neque, quam distinctio asperiores eius possimus autem eos repellat saepe facere, tenetur accusantium? Debitis vel saepe eligendi numquam quas distinctio dolor. Dolore eligendi id blanditiis suscipit iure facilis eveniet, ex molestiae similique incidunt! Possimus a cupiditate veniam culpa rerum velit perspiciatis unde. Praesentium, rem laboriosam reprehenderit ipsam fuga minus asperiores architecto veniam dolore libero voluptatem quisquam velit est eos id obcaecati tenetur, ex esse. Fugit quae hic minus nemo est? Nam adipisci quas deleniti facilis iure ea laboriosam reprehenderit repellendus eveniet, culpa rem quae eum quo explicabo id ducimus perferendis ipsum voluptate unde cumque atque, delectus nisi. Expedita consectetur explicabo ullam, mollitia iure ad voluptate dolor nisi quos magnam eum quae quaerat deserunt debitis. Incidunt aliquam qui facere alias dicta debitis ipsum necessitatibus, voluptate fuga quisquam expedita culpa corrupti exercitationem voluptatum soluta quidem tempora consectetur aliquid, repudiandae dolores eveniet iure sed. Quisquam nemo consectetur laudantium architecto saepe nesciunt dolores delectus enim accusamus, non quos id reiciendis repellendus maxime deleniti tempora ipsa, earum distinctio suscipit a tenetur? Perferendis officia rerum debitis. Quod, fugiat soluta! Alias aliquid deserunt, ab ipsam atque quam quaerat, adipisci modi inventore dolores eveniet nesciunt fuga aspernatur perferendis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti neque, quam distinctio asperiores eius possimus autem eos repellat saepe facere, tenetur accusantium? Debitis vel saepe eligendi numquam quas distinctio dolor. Dolore eligendi id blanditiis suscipit iure facilis eveniet, ex molestiae similique incidunt! Possimus a cupiditate veniam culpa rerum velit perspiciatis unde. Praesentium, rem laboriosam reprehenderit ipsam fuga minus asperiores architecto veniam dolore libero voluptatem quisquam velit est eos id obcaecati tenetur, ex esse. Fugit quae hic minus nemo est? Nam adipisci quas deleniti facilis iure ea laboriosam reprehenderit repellendus eveniet, culpa rem quae eum quo explicabo id ducimus perferendis ipsum voluptate unde cumque atque, delectus nisi. Expedita consectetur explicabo ullam, mollitia iure ad voluptate dolor nisi quos magnam eum quae quaerat deserunt debitis. Incidunt aliquam qui facere alias dicta debitis ipsum necessitatibus, voluptate fuga quisquam expedita culpa corrupti exercitationem voluptatum soluta quidem tempora consectetur aliquid, repudiandae dolores eveniet iure sed. Quisquam nemo consectetur laudantium architecto saepe nesciunt dolores delectus enim accusamus, non quos id reiciendis repellendus maxime deleniti tempora ipsa, earum distinctio suscipit a tenetur? Perferendis officia rerum debitis. Quod, fugiat soluta! Alias aliquid deserunt, ab ipsam atque quam quaerat, adipisci modi inventore dolores eveniet nesciunt fuga aspernatur perferendis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti neque, quam distinctio asperiores eius possimus autem eos repellat saepe facere, tenetur accusantium? Debitis vel saepe eligendi numquam quas distinctio dolor. Dolore eligendi id blanditiis suscipit iure facilis eveniet, ex molestiae similique incidunt! Possimus a cupiditate veniam culpa rerum velit perspiciatis unde. Praesentium, rem laboriosam reprehenderit ipsam fuga minus asperiores architecto veniam dolore libero voluptatem quisquam velit est eos id obcaecati tenetur, ex esse. Fugit quae hic minus nemo est? Nam adipisci quas deleniti facilis iure ea laboriosam reprehenderit repellendus eveniet, culpa rem quae eum quo explicabo id ducimus perferendis ipsum voluptate unde cumque atque, delectus nisi. Expedita consectetur explicabo ullam, mollitia iure ad voluptate dolor nisi quos magnam eum quae quaerat deserunt debitis. Incidunt aliquam qui facere alias dicta debitis ipsum necessitatibus, voluptate fuga quisquam expedita culpa corrupti exercitationem voluptatum soluta quidem tempora consectetur aliquid, repudiandae dolores eveniet iure sed. Quisquam nemo consectetur laudantium architecto saepe nesciunt dolores delectus enim accusamus, non quos id reiciendis repellendus maxime deleniti tempora ipsa, earum distinctio suscipit a tenetur? Perferendis officia rerum debitis. Quod, fugiat soluta! Alias aliquid deserunt, ab ipsam atque quam quaerat, adipisci modi inventore dolores eveniet nesciunt fuga aspernatur perferendis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti neque, quam distinctio asperiores eius possimus autem eos repellat saepe facere, tenetur accusantium? Debitis vel saepe eligendi numquam quas distinctio dolor. Dolore eligendi id blanditiis suscipit iure facilis eveniet, ex molestiae similique incidunt! Possimus a cupiditate veniam culpa rerum velit perspiciatis unde. Praesentium, rem laboriosam reprehenderit ipsam fuga minus asperiores architecto veniam dolore libero voluptatem quisquam velit est eos id obcaecati tenetur, ex esse. Fugit quae hic minus nemo est? Nam adipisci quas deleniti facilis iure ea laboriosam reprehenderit repellendus eveniet, culpa rem quae eum quo explicabo id ducimus perferendis ipsum voluptate unde cumque atque, delectus nisi. Expedita consectetur explicabo ullam, mollitia iure ad voluptate dolor nisi quos magnam eum quae quaerat deserunt debitis. Incidunt aliquam qui facere alias dicta debitis ipsum necessitatibus, voluptate fuga quisquam expedita culpa corrupti exercitationem voluptatum soluta quidem tempora consectetur aliquid, repudiandae dolores eveniet iure sed. Quisquam nemo consectetur laudantium architecto saepe nesciunt dolores delectus enim accusamus, non quos id reiciendis repellendus maxime deleniti tempora ipsa, earum distinctio suscipit a tenetur? Perferendis officia rerum debitis. Quod, fugiat soluta! Alias aliquid deserunt, ab ipsam atque quam quaerat, adipisci modi inventore dolores eveniet nesciunt fuga aspernatur perferendis.</p>
+    </div>
+</div>
+    
+        
+    </div>
+</body>
+</html>
