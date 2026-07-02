@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .task1{
+            display:grid;
+            grid-template-rows : auto auto;
+            grid-template-columns : auto auto auto;
+            row-gap:20px;
+            column-gap:20px;
+            margin : 30px;
+        }
+
+        .task1 > div{
+            background-color : blue;
+            padding : 50px;
+            border: 2px solid red;
+        }
+
+        .task2{
+            display : grid;
+            grid-template-columns: 1fr 3fr; 
+            grid-template-rows : 1fr 3fr 1fr;
+            grid-template-areas:
+            'header header'
+            'sidebar  main'
+            'footer footer';
+            margin : 30px;
+        }
+
+        #task2Header{
+            grid-area : header;
+            background-color: red;
+            border:2px black solid;
+        }
+
+        #task2Aside{
+            grid-area : sidebar;
+            background-color:gold;
+            border:2px solid green;
+        }
+
+        #task2Footer{
+            grid-area : footer;
+            background-color:blue;
+            border:2px solid violet;
+        }
+
+        #task2Main{
+            grid-area:main;
+            background-color: brown;
+            border:2px solid pink;
+        }
+        .task3{
+
+            display : grid;
+            grid-template-columns: repeat(3,minmax(200px,1fr));
+            grid-template-rows :repeat(2,minmax(200px,1fr));
+            padding : 50px;
+            row-gap:20px;
+            column-gap:20px;
+        }
+
+        .card{
+
+            padding : 50px;
+            border : 2px solid yellow;
+            background-color: gray;
+
+        }
+        .task4{
+            display: grid;
+            grid-template-columns : 1fr 1fr 1fr;
+            grid-template-rows: repeat(6,minmax(20px,1fr));
+            grid-template-areas:
+            'sample1 sample1 sample2'
+            'sample1 sample1 sample2'
+            'sample3 sample3 sample4'
+            'sample5 sample6 sample4'
+            'sample7 sample7 sample8'
+            'sample9 sample9 sample8'
+            ;
+            column-gap: 50px;
+            row-gap :50px;
+            margin:50px;
+        }
+        .sample1{
+            
+            border : 2px solid red;
+            grid-area:sample1;
+        }
+        .sample2{
+            
+            border : 2px solid red;
+            grid-area:sample2;
+        }
+        .sample3{
+            
+            border : 2px solid red;
+            grid-area:sample3;
+        }
+        .sample4{
+            
+            border : 2px solid red;
+            grid-area:sample4;
+        }
+        .sample5{
+            
+            border : 2px solid red;
+            grid-area:sample5;
+        }
+        .sample6{
+            
+            border : 2px solid red;
+            grid-area:sample6;
+        }
+        .sample7{
+            
+            border : 2px solid red;
+            grid-area:sample7;
+        }
+        .sample8{
+            
+            border : 2px solid red;
+            grid-area:sample8;
+        }
+        .sample9{
+            
+            border : 2px solid red;
+            grid-area:sample9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="task1">
+
+        <div id="t11">div 1</div>
+        <div id="t12">div 2</div>
+        <div id="t13">div 3</div>
+        <div id="t14">div 4</div>
+        <div id="t15">div 5</div>
+        <div id="t16">div 6</div>
+
+    </div>
+
+    <div class="task2">
+        <header id="task2Header">
+            <h1>header</h1>
+        </header>
+        <aside id="task2Aside">
+            <h1>Side</h1>
+        </aside>
+        <main id="task2Main">
+            <h1>Main</h1>
+        </main>
+        <footer id="task2Footer">
+            <h1>footer</h1>
+        </footer>
+    </div>
+
+    <div class="task3">
+        <div class="card">card</div>
+        <div class="card">card</div>
+        <div class="card">card</div>
+        <div class="card">card</div>
+        <div class="card">card</div>
+        <div class="card">card</div>
+    </div>
+    <div class="task4">
+        <div class="sample1"><img height="400px" width="400px" src="/sample1.jpg" alt=""></div>
+        <div class="sample2"><img height="400px" width="400px" src="/sample2.jpg" alt=""></div>
+        <div class="sample3"><img height="400px" width="400px" src="/sample3.jpg" alt=""></div>
+        <div class="sample4"><img height="400px" width="400px" src="/sample4.jpg" alt=""></div>
+        <div class="sample5"><img height="400px" width="400px" src="/sample5.jpg" alt=""></div>
+        <div class="sample6"><img height="400px" width="400px" src="/sample6.jpg" alt=""></div>
+        <div class="sample7"><img height="400px" width="400px" src="/sample7.jpg" alt=""></div>
+        <div class="sample8"><img height="400px" width="400px" src="/sample8.jpg" alt=""></div>
+        <div class="sample9"><img height="400px" width="400px" src="/sample9.jpg" alt=""></div>
+    </div>
+</body>
+</html>
