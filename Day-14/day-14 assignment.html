@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .task1:hover{
+            background-color:yellow;
+        }
+        .task2{
+            overflow : visible;
+            transition: transform 5s;
+        }
+        .task2:hover{
+            background-color:aqua;
+            transform : scale(2.7);
+            transform-origin : left;
+        }
+        .task3{
+            width:300px;
+            height:300px;
+            border : 2px solid black;
+            transition : background-color 2s,transform 3s;
+        }
+        .task3:hover{
+            background-color: aqua;
+            transform:scale(1.2);
+            transform-origin: center;
+        }
+        .task4{
+            background-color: blue;
+            opacity : 0;
+            transition:opacity 4s;
+            border: 2px solid black;
+        }
+        .task4:hover{
+            opacity : 1
+        }
+        .task5{
+            font-family : "Courier New", monospace;
+        }
+        .task6 >h1{
+            text-decoration:underline;
+        }
+        .task6 >p{
+            text-decoration:underline;
+            color:blue;
+            font-style:italic;
+        }
+        .task7{
+            width:80%;
+            max-width: 600px;
+            background-color:aqua;
+        }
+        .task8{
+            font-size: 1.5rem;
+        }
+        .task9 > h1{
+            font-size: 5vw;
+        }
+        .task10{
+            background-color:yellow;
+        }
+        @media(max-width : 768px){
+            .task10{
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="task1">
+        <h1>task 1</h1>
+    </section>
+    <section class="task2">
+        <h1>task 2</h1>
+    </section>
+    <section class="task3">
+        <h1>task 3</h1>
+    </section>
+    <section class="task4">
+        <h1>task 4</h1>
+    </section>
+    <section class="task5">
+        <h1>task 5</h1>
+    </section>
+    <section class="task6">
+        <h1>task 6</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque eligendi maxime sint fugit consequatur vitae vero quasi doloribus modi. Eius sapiente odit quisquam molestiae eveniet voluptatum dignissimos consectetur quos voluptas.</p>
+    </section>
+    <section class="task7">
+        <h1>task 7</h1>
+    </section>
+    <section class="task8">
+        <h1>task 8</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut libero nihil ad illum. Libero, repellendus molestias! Eius minus enim dolore sit maiores quo laborum, quas, veritatis facere corrupti beatae culpa.</p>
+        <p>takes up space based on the parent size</p>
+    </section>
+    <section class="task9">
+        <h1>task 9</h1>
+    </section>
+    <section class="task10">
+        <h1> task 10</h1>
+    </section>
+</body>
+</html>
