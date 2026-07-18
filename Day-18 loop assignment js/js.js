@@ -1,13 +1,13 @@
 
 //sum of given number ################################
 console.log('_____________________sum of given number______________________');
-let n = Number(prompt('Enter the number'));
-let sum =0;
-for(let i = 0 ; i>=n;i++){
-    sum += 1
+let n1 = 10;
+let sum1 =0;
+for(let i = 0 ; i<=n1;i++){
+    sum1 += i;
 }
-console.log(`The sum of ${n} numbers = ${sum}`);
-console.log(`the avg i = ${sum/n}`);
+console.log(`The sum1 of ${n1} numbers = ${sum1}`);
+console.log(`the avg i = ${sum1/n1}`);
 
 
 
@@ -15,15 +15,15 @@ console.log(`the avg i = ${sum/n}`);
 
 //fibinosi ###########################################
 console.log('___________fibinosi_________________');
-let n = 10;
+let n2 = 10;
 let first = 1;
 let second = 2;
-let sum = 0;
-for(let i = 0 ; i <= n; i++){
-    sum = first + second;
+let sum2 = 0;
+for(let i = 0 ; i <= n2; i++){
+    sum2 = first + second;
     second = first;
-    first = sum;
-    console.log(sum);
+    first = sum2;
+    console.log(sum2);
 }
 
 
@@ -32,37 +32,36 @@ for(let i = 0 ; i <= n; i++){
 
 // palindrome ##########################################
 console.log('______________________palindrome___________________');
-let string = 'malayalam'
-let checkstring = '';
-console.log(string);
-for(let i = string.length -1 ; i>=0 ; i--){
-    checkstring += string[i];
+let string5 = 'malayalam'
+let checkstring5 = '';
+console.log(string5);
+for(let i = string5.length -1 ; i>=0 ; i--){
+    checkstring5 += string5[i];
 }
-console.log(checkstring);
 
-if(checkstring == string){
-    console.log(string + 'its a palindrome');
+if(checkstring5 == string5){
+    console.log(string5 + 'its a palindrome');
 }
 else{
-    console.log(string +'its not a palindrome');
+    console.log(string5 +'its not a palindrome');
 }
 
 
 //12 factorial of a given number ###############
 console.log('_____________________________factorial________________________________');
-let n = 5;
+let n6 = 5;
 let factorial = 1;
-for(let i = 1;i<=n;i++){
+for(let i = 1;i<=n6;i++){
     factorial *= i;
 }
 console.log(factorial);
 
 //13 prime or not  #############################################
 console.log('____________________________prime or not input=9____________________________');
-let number = 9;
+let number6 = 9;
 let count =0;
-for(let i= 1 ; i<=number ; i++){
-    if(number%i==0){
+for(let i= 1 ; i<=number6 ; i++){
+    if(number6%i==0){
         count+=1;
         continue;
     }
@@ -79,8 +78,8 @@ else{
 
 //14 print the prime series ###########################################
 console.log('_____________________________________prime number series input=100___________________________');
-let n = 100;
-for(let number = 1;number<= n ;number++){
+let n7 = 100;
+for(let number = 1;number<= n7 ;number++){
 
     let count =0;
     for(let i= 1 ; i<=number ; i++){
