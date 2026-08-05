@@ -28,3 +28,29 @@ function btn5(){
         i.style.color='yellow';
     }
 }
+function diableButton(button,className){
+    console.log(button);
+    const allButton = document.querySelectorAll('.'+className);
+    for(let i of allButton){
+        if(i === button){
+            continue
+        }
+        else{
+            i.style.backgroundColor = 'black';
+            i.disabled=true;
+        }
+    }
+}
+
+function q7(className){
+    obj = document.querySelector(className);
+    obj.innerText='button is Clicked'
+}
+
+function q8(className){
+    obj = document.querySelectorAll(className);
+    for(let i of obj){
+        i.style.color='blue'
+        i.style.fontStyle = 'italic'
+    }
+}
