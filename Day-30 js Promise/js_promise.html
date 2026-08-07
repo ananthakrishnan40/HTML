@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function q1(){
+            return new Promise((resolve)=>{
+                setTimeout(()=>{
+                    resolve('Welcome to js promise Q1')
+                },2000);
+            })
+        };
+
+        q1().then(result=>{
+            console.log(result);
+        });
+
+
+
+        function q2(int){
+            return new Promise((resolve,reject)=>{
+
+                setTimeout(()=>{
+                    if(typeof(int)!="number"){
+                        reject('Invalid Data Q2');
+                    }
+                    else{
+                        resolve('its valid Q2');
+                    }
+                },2000);
+            })
+        }
+
+        q2('abc').catch(error=>{
+            console.log(error);
+        })
+
+
+        function q3(number){
+            return new Promise((resolve,reject)=>{
+                if(number % 2 != 0){
+                    resolve('its odd -> resolve Q3');
+                }
+                else{
+                    reject('its Even -> reject Q3');
+                }
+            })
+        }
+
+        q3(1).then(result=>{
+            console.log(result);
+        }).catch(error=>{
+            console.log(error);
+        })
+
+
+
+        function q4(age){
+            return new Promise((resolve,reject)=>{
+                if(age>=18){
+                    resolve('Eligible -> resolve Q4');
+                }
+                else{
+                    reject('Not Eligible -> reject Q4');
+                }
+            })
+        }
+
+        q4(16).then(result=>{
+            console.log(result);
+        }).catch(error=>{
+            console.log(error)
+        })
+
+
+        function q5(a,b){
+            return new Promise((resolve,reject)=>{
+                if(b<0){
+                    reject(`B is a negative value Q5`);
+                }
+                else{
+                    resolve(a+b);
+                }
+            })
+        }
+
+        q5(10,-2).then(result=>{
+            console.log(result);
+        }).catch(error=>{
+            console.log(error)
+        })
+
+        function q6(){
+            console.log('Order placed');
+            return new Promise((resolve)=>{
+                setTimeout(()=>{
+                    console.log('Food is ready Q6');
+                })
+            })
+        }
+
+        q6().then(result=>{
+            console.log(result);
+        })
+
+
+        function q7(string){
+            return new Promise((resolve,reject)=>{
+                if(typeof(string)=='string' && string.length > 0){
+                    resolve('Is Valid q7');
+                }
+                else{
+                    
+                    reject('Is not-Valid q7');
+                }
+            })
+        }
+
+        q7('hello').then(result=>{
+            console.log(result);
+        }).catch(error=>{
+            console.log(erroe);
+        });
+
+
+        function q8(number){
+            return new Promise((resolve,reject)=>{
+                console.log('q8');
+                if(number %2==0){
+                    resolve('its Even -> resolve q8');
+                }
+                else{
+                    reject('it Odd -> reject q8')
+                }
+            })
+        }
+
+        q8(8).then(result=>{
+            console.log(result)
+        }).catch(error=>{
+            console.log(error);
+        })
+
+
+        const p1 = new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve(console.log('Hello 1 -> Q9'));
+            },1000);
+        })
+
+        const p2 = new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve(console.log('Hello 2 -> Q9'));
+            },2000);
+        });
+
+        const p3 = new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve(console.log('Hello 3 -> Q9 '));
+            },3000);
+        })
+
+
+        Promise.all([p1,p2,p3]).then(result=>{
+            console.log('its successfull Q9');
+        }).catch(error=>{
+            console.log('Some thing went wrong Q9')
+        })
+
+
+
+        race1=new Promise((resolve,reject)=>{
+            reject('race 1 q10');
+        })
+
+        
+        race2=new Promise((resolve,reject)=>{
+            reject('race 2 q10');
+        })
+
+        
+        race3=new Promise((resolve,reject)=>{
+            resolve('race 3 q10');
+        })
+
+        Promise.race([race1,race2,race3]).then(result=>{
+            console.log('Q10 success')
+            console.log(result)
+        }).catch(erroe=>{
+            console.log('its a erroe');
+        })
+
+        
+    </script>
+    
+</body>
+</html>
