@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="t1Display"></h1>
+    <button id="b1">Button t1</button>
+    <br>
+    <br>
+    <p id="t2Display">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, porro consequatur! Repudiandae distinctio voluptate ab modi consequatur tempora iste nesciunt quam maiores. Magni labore voluptatum, quae omnis eveniet amet incidunt.</p>
+    <button id='b2'>Button t2</button>
+    <br>
+    <br>
+    <input type="text" id="t3inputBox" placeholder="Enter the Text Here">
+    <button id="t3Button">Show</button>
+    <p id="t3Display"></p>
+    <br>
+    <br>
+    <br>
+
+    <h1 id="t4Display"></h1>
+    <button id="t4Button">Count</button>
+    <br>
+    <br>
+    <br>
+    <div style="border:2px solid black;height:300px;" id="t5Display"></div>
+    <br>
+    <br>
+    <button id="t6Button">Button t6</button>
+    <br>
+    <br>
+    <label for="t7Input">
+        t7 Input :
+        <input id="t7Input" type="text">
+        <h1 id="t7Display"></h1>
+    </label>
+    <br>
+    <br>
+    <button id="t8Button">t8 Button</button>
+    <br>
+    <p id="t8Display">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ex ullam, tempora recusandae error consectetur nam eum laudantium modi labore impedit saepe corporis fuga sint nesciunt, tenetur laboriosam. Explicabo, nesciunt?</p>
+    <br>
+    <br>
+    <img id="t9Display" src="/moon.jpg" height="300px" width="300px">
+    <br>
+    <button id="t9Button">t9 changeImage</button>
+    <br>
+    <br>
+    <textarea name="" id="t10Input" rows="10" cols="80" placeholder="Focus"></textarea>
+
+    
+    <script>
+
+        let t1Display = document.getElementById('t1Display');
+        function t1(){
+            t1Display.innerText = 'Hello  World';
+        }
+
+        const b1 = document.getElementById('b1').addEventListener('click',t1);
+
+        t2 = document.getElementById('b2');
+        t2Display = document.querySelector('#t2Display');
+        t2.addEventListener('click',()=>{
+            t2Display.style.color = 'blue';
+        })
+
+        const t3Display=document.getElementById('t3Display');
+        const t3Button = document.getElementById('t3Button');
+        const t3input = document.getElementById('t3inputBox');
+
+        t3Button.addEventListener('click',()=>{
+            let value = t3input.value;
+            t3Display.innerText = value;
+        })
+
+        const t4Display = document.getElementById('t4Display')
+        const t4Button = document.getElementById('t4Button');
+
+        
+        let t4count = 0;
+
+        t4Button.addEventListener('click',()=>{
+            t4count += 1;
+            t4Display.innerText= t4count;
+        })
+
+        const t5Display = document.querySelector('#t5Display');
+
+        t5Display.addEventListener('mouseover',()=>{
+            t5Display.style.backgroundColor = 'red';
+        })
+
+        t5Display.addEventListener('mouseout',()=>{
+            t5Display.style.backgroundColor = 'blue';
+        })
+        
+        const t6Button = document.getElementById('t6Button');
+        t6Button.addEventListener('dblclick',()=>{
+            alert('You duble clicked a t6 button');
+        })
+        
+        const t7Input = document.getElementById('t7Input');
+        t7Input.addEventListener('keyup',()=>{
+            const t7Display = document.getElementById('t7Display');
+            t7Display.innerText = t7Input.value;
+        })
+
+        const t8Button = document.getElementById('t8Button');
+        const t8Display = document.querySelector('#t8Display');
+        t8Display.style.display = 'none';
+        let t8Visible = false;
+        
+        t8Button.addEventListener('click',()=>{
+            if(t8Visible){
+                t8Display.style.display='block';
+                t8Visible = false;
+            }
+            else{
+                t8Display.style.display='none';
+                t8Visible = true;
+            }
+        })
+
+        const t9Display=document.getElementById('t9Display');
+        const t9Button = document.getElementById('t9Button');
+
+        let t9 = false;
+
+        t9Button.addEventListener('click',()=>{
+            if(t9){
+                t9Display.src='/moon.jpg';
+                t9=false;
+            }
+            else{
+                t9Display.src='/sun.jpg';
+                t9=true;
+            }
+        })
+
+        const t10Input = document.getElementById('t10Input');
+        t10Input.addEventListener('focus',()=>{
+            t10Input.style.border='5px solid red';
+
+        })
+
+        t10Input.addEventListener('blur',()=>{
+            t10Input.style.border='1px solid';
+        })
+
+    </script>
+
+</body>
+</html>

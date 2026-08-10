@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function stringRev1(string){
+            let pointer = string.length -1;
+            let result = '';
+            while(pointer>=0){
+                result += string[pointer];
+                pointer -= 1;
+            }
+            return result
+        }
+        console.log(stringRev1('hello'));
+
+
+        function palindrome2(string){
+            let check = '';
+            let pointer = string.length-1;
+            for(pointer;pointer>-1;pointer-=1){
+                check += string[pointer];
+            }
+            if(check === string){
+                console.log(`${string} is a palindrome`);
+            }
+            else{
+                console.log(`${string} is not a palindrome`);
+            }
+            
+        }
+        palindrome2('ohho');
+
+        function countvowels(string){
+            let map = {};
+            let count = 0;
+            let check =new Set(['a','e','i','o','u'])
+            for(let i of string){
+                if(check.has(i)){
+                    count+=1
+                }
+            }
+            console.log(count);
+        }
+
+        countvowels('aei');
+
+        function revsen(sen,word){
+            let result = '';
+            let list = sen.split(' ');
+            let start = 0;
+            for(start;start<list.length;start+=1){
+                if(start == word){
+                    subResult = list[start].split('');
+                    l = 0;
+                    r = subResult.length -1;
+                    while(l<r){
+                        temp = subResult[l];
+                        subResult[l]=subResult[r];
+                        subResult[r] = temp;
+                        l+=1;
+                        r-=1;
+                    }
+                    result+=' '+subResult.join('');
+                }
+                else{
+                    result+=' '+list[start];
+                }
+            }
+            console.log(result);
+        }
+
+        sen = `i am ananthakrishnan i had a Elephant at home`
+        revsen(sen,6);
+
+
+        function findDuplicate(string){
+            map = {}
+            for(let i of string){
+                if(!(i in map)){
+                    map[i]=1;
+                }
+                else{
+                    map[i]+=1;
+                }
+            }
+            console.log(map);
+        }
+
+        findDuplicate('AnanthaKrishnan');
+
+
+
+    </script>
+    
+</body>
+</html>
