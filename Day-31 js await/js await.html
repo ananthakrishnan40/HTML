@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <label for="userNamet2">
+        Enter the user name :
+        <input type="text" id="userNamet2"> <button id="t2Button">Submit</button>
+    </label>
+
+
+    <script>
+        function t1sub(){
+            setTimeout(()=>{
+                console.log('task Complet');
+            },2000);
+        }
+
+
+        async function t1(){
+            await t1sub()
+        }
+
+        t1();
+
+        function t2Sub(){
+            userName = prompt('Enter user name');
+            setTimeout(()=>{
+                console.log(userName)
+            },2000)
+        }
+
+        async function t2(){
+            await t2Sub();
+        }
+
+        t2();
+
+
+        async function t3(num1,num2){
+            await setTimeout(()=>{
+                console.log(num1+num2);
+            },1000);
+        }
+
+        t3(1,2);
+
+        function t4Sub1(){
+            setTimeout(()=>{
+                console.log('Task 1 complete');
+            },2000);
+        }
+
+        function t4Sub2(){
+            setTimeout(()=>{
+                console.log('Task 2 complete');
+            },3000);
+        }
+
+        function t4Sub3(){
+            setTimeout(()=>{
+                console.log('Task 3 Complete')
+            },4000);
+        }
+
+        async function t4(){
+            await t4Sub1();
+            await t4Sub2();
+            await t4Sub3();
+        }
+        t4();
+
+        async function t5(){
+            await setTimeout(()=>{
+                console.log('Order placed');
+            },5000);
+
+            await setTimeout(()=>{
+                console.log('order Ready');
+            },6000);
+
+            await setTimeout(()=>{
+                console.log('Enjoy your meal');
+            },7000);
+        }
+
+        t5();
+
+        async function t6(){
+            console.log('Downloding started....')
+            await setTimeout(()=>{
+                console.log('Downloding...50%')
+            },7000)
+
+            await setTimeout(()=>{
+                console.log('Downloding....75%');
+            },8000);
+
+            await setTimeout(()=>{
+                console.log('Downloding...99%');
+            },9000)
+
+            await setTimeout(()=>{
+                console.log('Downloding Complete');
+            },10000);
+        }
+
+        t6();
+
+        async function t7(num){
+            await setTimeout((num)=>{
+                console.log(num%2==0 ?'its Even' : 'its odd');
+            },2000,num)
+        }
+        
+        t7(20);
+
+        async function t8(){
+            try{
+                console.log('This should throw an error',2/null);
+            }
+            catch{
+                console.log('its an error 0/0');
+            }
+        }
+
+        t8();
+
+        async function t9(){
+            function Promise1(){
+                return new Promise((resolve,reject)=>{
+                    setTimeout(()=>{
+                        resolve('Promise1 resolved');
+                    },11000)
+                })
+            }
+            function Promise2(){
+                return new Promise((resolve,reject)=>{
+                    setTimeout(()=>{
+                        resolve('Promise2 resolved');
+                    },12000)
+                })
+            }
+            function Promise3(){
+                return new Promise((resolve,reject)=>{
+                    setTimeout(()=>{
+                        resolve('Promise3 resolved');
+                    },13000)
+                })
+            }
+
+            Promise1().then(result=>{
+                console.log(result)
+            });
+
+            Promise2().then(result=>{
+                console.log(result)
+            });
+
+            Promise3().then(result=>{
+                console.log(result)
+            });
+
+        }
+
+        t9();
+
+    </script>
+    
+</body>
+</html>
